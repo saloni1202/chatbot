@@ -13,7 +13,7 @@ model = genai.GenerativeModel("models/gemini-2.5-pro")
 
 # Page setup
 st.set_page_config(page_title="Gemini Chatbot", page_icon="🤖", layout="centered")
-st.title("🤖 Gemini Chatbot")
+st.title("🤖 Chatbot")
 
 # Custom CSS for clean interface
 st.markdown("""
@@ -39,7 +39,7 @@ for msg in st.session_state.chat_history:
         st.markdown(msg["parts"])
 
 # Chat input
-user_input = st.chat_input("Type your message here...")
+user_input = st.chat_input("Ask Anything")
 
 if user_input:
     # Show user input
